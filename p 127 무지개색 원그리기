@@ -1,11 +1,9 @@
 import turtle
 
 ## 전역 변수 선언 부분##
-
 swidth,sheight = 500,500
 
 ## 메인 코드 부분##
-
 turtle.title('무지개색 원 그리기')
 turtle.shape('turtle')
 turtle.setup(width=swidth+50, height=sheight+50)
