@@ -10,3 +10,17 @@ for i in range(500,1001,2):
 print("500에서 1000까지의 홀수의 합계 : %d" %hap)
 
 
+# 7의 배수 합계
+
+i,hap=0,0
+for i in range(0,101,7):
+    hap = hap + i
+print("0에서 100까지의 7의 배수 합계 : %d" %hap)
+
+# 배수 합계 구하기 
+i,hap,num=0,0,0
+num=int(input("값을 입력하세요:"))
+cha=int(input("무슨 수의 배수를 더할까요?:"))
+for i in range(0,num+1,cha):
+    hap = hap + i
+print("1에서 %d까지의 %d의 배수 합계 : %d" %(num,cha,hap))
