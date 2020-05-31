@@ -13,7 +13,6 @@ turtle.goto(0,-sheight/2)
 turtle.pendown()
 turtle.speed(10)
 
-
 for radius in range(1,205):
     if radius %7 ==1:
         turtle.pencolor('red')
