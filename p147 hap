@@ -2,3 +2,11 @@ i,hap=0,0
 for i in range(1,11,1):
     hap = hap + i
 print("1에서 10까지의 합계 : %d" %hap)
+
+# 홀수의 합 
+i,hap=0,0
+for i in range(500,1001,2):
+    hap = hap + i
+print("500에서 1000까지의 홀수의 합계 : %d" %hap)
+
+
