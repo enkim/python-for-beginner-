@@ -35,3 +35,10 @@ else:
     print("F")
 
 print ("학점입니다 ^^")
+
+#삼항 연산자 이용
+jumsu =55
+res='합격' if jumsu >=60 else'불합격'
+print(res)
+
+
