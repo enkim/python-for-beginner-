@@ -1,0 +1,18 @@
+for i in range(0,3,1):
+    print("%d: 안녕하세요? for문을 공부중입니다.^^" %i)
+
+
+i=0
+while  i<3:
+    print("%d: 안녕하세요? while 문을 공부 중입니다.^^" %i)
+    i=i+1
+
+i,hap=0,0
+
+i=1
+
+while i<11:
+    hap=hap+i
+    i=i+1
+
+print("1에서 10까지의 합계: %d" %hap)
