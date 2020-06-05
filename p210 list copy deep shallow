@@ -1,5 +1,5 @@
 oldList=['짜장면','탕수육','군만두']
-newList=oldList [:] # Deep copy 
+newList=oldList [:] # Deep copy (newList=oldList.copy() 로 해도 된다) 
 print(newList)
 oldList[0]='짬뽕'
 oldList.append('깐풍기')
