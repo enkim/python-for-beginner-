@@ -9,3 +9,22 @@ numList=[num for num in range(1,6)]
 numList
 
 
+#Comprehension 으로 List 쉽게 만들기
+리스트=[수식 for 항목 in range() if 조건식] 
+
+numList=[num for num in range(1,21) if num%3==0]
+numList 
+
+# zip 함수는 두 리스트를 튜플이나 딕셔너리로 짝지을 때도 간단하게 활용할 수 있다# 
+foods=['떡볶이','짜장면','라면','피자','맥주','치킨','삼겹살']
+sides=['오뎅','단무지','김치'] 
+for food, side in zip(foods,sides): 
+    print(food, '-->',side)
+
+# zip 함수는 두 리스트를 튜플이나 딕셔너리로 짝지을 때도 간단하게 활용할 수 있다# 
+foods=['떡볶이','짜장면','라면','피자','맥주','치킨','삼겹살']
+sides=['오뎅','단무지','김치'] 
+tupList=list(zip(foods,sides))
+dic=dict(zip(foods,sides))
+tupList
+dic     
