@@ -12,3 +12,13 @@ while (True):
         print("그런 읍식이 없습니다.확인해보세요")
         
         
+## 변수선언 부분## 왜 안되는지 여쭤보기 
+animals = {"닭":"병아리","곰":"능소니","호랑이":"개호주","명태":"노가리","말":"망아지","개":"강아지"}
+
+#메인 코드 부분##
+while (True):
+    childanimal=input(str(list(animals.keys()))+"중 새끼 이름을 알고 싶은 동물은?")
+    if childanimal in animals:
+        print("<%s> 의 새끼는<%s>입니다." %(childanimal, animals.get(childanimal))
+    else:
+        print("그런 동물이 없습니다.확인해보세요")
