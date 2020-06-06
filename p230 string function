@@ -14,4 +14,34 @@ if ss.endswith(')')==False:
 ss.strip()
 ss.rstrip()
 ss.lstrip()
-     
+    
+# 특정 문자를 삭제해주는 code: strip 
+ss='----파---이---썬---'
+print(ss.strip('-'))
+ss='<<<파<<이>>썬>>>'
+print(ss.strip('<>')) 
+
+
+
+# 문자 사이의 공백까지 삭제하기 
+inStr=" 한글 Python 프로그래밍"
+outStr=""
+
+for i in range(0,len(inStr)): 
+    if inStr[i]!='': 
+        outStr+=inStr[i]
+        
+print("원래 문자열==>" + '['+inStr+ ']')
+print("공백 삭제 문자열-->" + '[' + outStr + ']')
+
+
+# 문자 사이의 특정 문자 삭제하기 
+inStr=" <<<파<<이>>썬>>>"
+outStr=""
+
+for i in range(0,len(inStr)): 
+    if inStr[i]!='<'and'>': 
+        outStr+=inStr[i]
+        
+print("원래 문자열==>" + '['+inStr+ ']')
+print("<>제외 문자열-->" + '[' + outStr + ']')
