@@ -45,3 +45,11 @@ for i in range(0,len(inStr)):
         
 print("원래 문자열==>" + '['+inStr+ ']')
 print("<>제외 문자열-->" + '[' + outStr + ']')
+
+
+#특정 문자를 다른 문자로 replace 해주기
+# replace('기존 문자열','새문자열') 
+ss='열심히 파이썬 공부중~~~' 
+ss.replace('파이썬','Python') 
+
+
