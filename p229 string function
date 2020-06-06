@@ -1,0 +1,7 @@
+# 문자열 함수
+ss='Python is Easy. 그래서 programming 이 재미 있습니다. ^^'
+ss.upper()
+ss.lower()
+ss.swapcase()
+ss.title()
+
