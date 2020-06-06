@@ -92,3 +92,10 @@ print(ssList[1]+"월", end='')
 print(ssList[2]+"일")
       
       
+# map(함수명, 리스트명)
+#map(함수명,리스트명)은 리스트값 하나하나를 함수명에 대입한다.  
+before=['2019','12','31']
+after=list(map(int,before))
+after
+
+
