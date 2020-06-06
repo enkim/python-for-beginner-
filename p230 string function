@@ -52,4 +52,43 @@ print("<>제외 문자열-->" + '[' + outStr + ']')
 ss='열심히 파이썬 공부중~~~' 
 ss.replace('파이썬','Python') 
 
+ss=input("입력 문자열==>") 
 
+
+#o->$ 으로 바꾸기 
+print("출력 문자열==>", end='') 
+for i in range(0,len(ss)): 
+    if ss[i]!='o':
+        print(ss[i],end='')
+    else:
+        print('$',end='')
+
+
+#'replace'함수로 한줄로 바꾸기
+ss=input("입력 문자열==>") 
+print("출력 문자열==>", end='') 
+print(ss.replace('o','$'))
+                  
+
+#Split 쓰기 
+ss='Python 을 열심히 공부 중'
+ss.split()
+
+ss='하나:둘:셋'
+ss.split(':')
+
+ss='하나\n둘\n셋'
+ss.splitlines()
+
+ss='%'
+ss.join('파이썬')
+
+#Split 으로 10년 후 날짜로 변환하기 
+ss=input("날짜(연/월/일)입력 ==>")
+ssList=ss.split('/')
+print("입력한 날짜의 10년 후 ==> ", end='')
+print(str(int(ssList[0])+10)+"년",end='')
+print(ssList[1]+"월", end='')
+print(ssList[2]+"일")
+      
+      
