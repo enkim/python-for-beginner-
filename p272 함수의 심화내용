@@ -1,0 +1,24 @@
+### 패키지안에서 모듈 꺼내기##################################### 
+#Module1.py 가 있는 상위 folder 명을 package 로 하였음. 
+
+from 패키지명.모듈명 import 함수명 
+from pakage.Module1 import * 
+
+## Function 안의 Function###
+def outFunc(v1,v2):
+    def inFunc(num1,num2):
+        return num1+num2
+    return inFunc(v1,v2)
+print(outFunc(10,20))
+
+##lambda 함수 이용하기######################################### 
+# lambda 함수는 함수를 간단하게 만들어준다. 
+#이용전
+def hap(num1,num2):
+    res=num1+num2
+    return res
+print(hap(10,20))
+
+#이용후 
+hap2=lambda num1,num2:num1+num2
+print(hap2(10,20))
