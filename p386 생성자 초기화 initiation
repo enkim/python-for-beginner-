@@ -1,0 +1,73 @@
+## 클래스 선언 부분##
+class Car:
+    color=""
+    speed=0
+
+    def __init__(self):
+        self.color="빨강"
+        self.speed=0
+
+    def upSpeed(self,value):
+        self.speed+=value
+
+    def downSpeed(self,value):
+        self.speed-=value
+
+#메인 코드 부분
+myCar1=Car()
+myCar2=Car()
+
+print("자동차 1의 색상은 %s이며, 현재 속도는 %dkm 입니다."%(myCar1.color, myCar1.speed))
+print("자동차 2의 색상은 %s이며, 현재 속도는 %dkm 입니다."%(myCar2.color, myCar2.speed))
+
+
+##각각 value 넣기##################################################################
+## 클래스 선언 부분##
+class Car:
+    color=""
+    speed=0
+
+    def __init__(self,value1,value2): #매개 변수를 2개 받도록 설정함.
+        self.color=value1
+        self.speed=value2
+
+    def upSpeed(self,value):
+        self.speed+=value
+
+    def downSpeed(self,value):
+        self.spped-=value
+
+#메인 코드 부분
+myCar1=Car("빨강",30)
+myCar2=Car("파랑",60)
+
+print("자동차 1의 색상은 %s이며, 현재 속도는 %dkm 입니다."%(myCar1.color, myCar1.speed))
+print("자동차 2의 색상은 %s이며, 현재 속도는 %dkm 입니다."%(myCar2.color, myCar2.speed))
+
+#######################################################################################
+## 클래스 선언 부분##
+class Car:
+    color=""
+    speed=0
+
+    def __init__(self,name,speed): #매개변수 설정
+        self.name=name
+        self.speed=speed
+
+    def getName(self): #자동차의 이름을 반환함
+        return self.name
+
+    def getSpeed(self): #자동차의 현재 속도를 반환함
+        return self.speed
+
+##변수 선언 부분##
+car1,car2=None,None
+
+##메인 코드 부분##
+car1=Car("아우디",0)
+car2=Car("벤츠",30)
+
+print("%s의 현재 속도는 %d 입니다." %(car1.getName(),car1.getSpeed()))
+print("%s의 현재 속도는 %d 입니다." %(car2.getName(),car2.getSpeed()))
+
+######################################################################################
