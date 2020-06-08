@@ -1,0 +1,35 @@
+# Module1.py 에 다음과 같이 function 을 저장해둠
+##함수 선언 부분##
+def func1():
+    print("Module1.py 의 func1()이 호출됨")
+
+def func2():
+    print("Module1.py 의 func2()이 호출됨")
+
+def func3():
+    print("Module1.py 의 func3()이 호출됨")
+
+    
+#############################################3
+
+# 이렇게 해서 Module 을 부르거나, (단, 파일 명에서 .py 는 빼야함.) 
+import Module1 
+
+#메인 코드 부분##
+Module1.func1()
+Module1.func2()
+Module1.func3()
+
+
+
+#############################################3
+
+# 이렇게 Module 파일에서 function 을 import 한 후 바로 function 이름만 넣어도 됨.  
+
+from Module1 import func1,func2,func3 #또는 from Module1 import
+
+#메인 코드 부분##
+func1()
+func2()
+func3()
+ 
