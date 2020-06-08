@@ -1,0 +1,8 @@
+##파이썬에서 제공하는 module 들 확인해보기
+import sys
+print(sys.builtin_module_names)
+
+#Module 안에서 제공되는 함수 찾아 보기 dir()
+import math
+print(dir(math))
+
