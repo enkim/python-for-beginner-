@@ -22,3 +22,69 @@ print(hap(10,20))
 #이용후 
 hap2=lambda num1,num2:num1+num2
 print(hap2(10,20))
+
+#필요하면 매개 변수에 기본 값을 설정할 수도 있다. 
+hap3=lambda num1=10,num2=20:num1+num2
+print(hap3())
+print (hap3(100,200))
+
+
+##Map함수 이용하기####################################################
+#이용전
+myList=[1,2,3,4,5]
+def add10(num):
+    return num+10
+
+for i in range(len(myList)):
+    myList[i]=add10(myList[i])
+print(myList)
+
+#이용후
+# Map(함수명,list) 는 리스트의 모든 내용을 하나씩 함수에 적용 시킨다.  
+myList=[1,2,3,4,5]
+add10=lambda num: num+10 
+myList=list(map(add10,myList))
+print(myList)
+
+
+##재귀함수 ####################################################3
+def selfCall():
+    print('하',end='')
+    selfCall()
+selfCall()
+
+################거꾸로 세기 
+def count(num):
+    if num>1:
+        print(num,end='')
+        count(num-1)
+    else:
+        return 
+count(10)
+count(20)
+
+###재귀함수로 Factorial 계산하기### 
+def factorial(num):
+    if num<=1:
+        return num
+    else:
+        return num*factorial(num-1)
+print(factorial(4))
+print(factorial(10))
+
+
+###Yield 가 포함된 함수:Generator##############################
+def genFunc():
+    yield 1
+    yield 2
+    yield 3
+    
+print(list(genFunc()))
+
+###generator 원리###???? 
+def genFunc(num):
+    for i in range(0,num):
+        yield i
+        print('제네레이터 진행중')
+for data in genFunc(5):
+    print(data)
