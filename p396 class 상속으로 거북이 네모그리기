@@ -2,7 +2,6 @@ import turtle
 import random
 
 ##클래스 선언 부분##
-
 class Shape: #슈퍼 클래스
     myTurtle=None
     cx,cy=0,0 #도형의 중심점
